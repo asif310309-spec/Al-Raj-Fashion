@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Raj Fashion</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#08111f;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#0b1728;
+border-bottom:1px solid rgba(255,215,0,0.2);
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:gold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200');
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:70px;
+color:gold;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin-bottom:30px;
+color:#ddd;
+}
+
+.btn{
+padding:15px 40px;
+background:gold;
+border:none;
+border-radius:40px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
+padding:80px 60px;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:gold;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#102038;
+border-radius:20px;
+overflow:hidden;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+color:gold;
+margin-bottom:10px;
+}
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(255,215,0,0.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">AL RAJ FASHION</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Collection</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Luxury Fashion</h1>
+
+<p>
+Style for the globe. Inspired by Bangladesh.
+</p>
+
+<button class="btn">Explore Collection</button>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Featured Collection</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900">
+
+<div class="card-content">
+<h3>Premium Shirts</h3>
+<p>Modern luxury fashion with international style.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=900">
+
+<div class="card-content">
+<h3>Elegant Collection</h3>
+<p>Inspired by global fashion trends and premium quality.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=900">
+
+<div class="card-content">
+<h3>Street Fashion</h3>
+<p>Luxury casualwear for modern youth generation.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Al Raj Fashion — All Rights Reserved
+</footer>
+
+</body>
+</html>
